@@ -55,6 +55,8 @@ function getList(params, path1, pathname) {
   res.map((item) => {
     item.text = item.text.replace(/\.md$/, "");
   });
+
+  console.log(res)
   return res;
 }
 

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "../utils/auto_sidebar";	// 改成自己的路径
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -34,30 +34,8 @@ export default defineConfig({
       }
     ],
 
-    sidebar: {
-      '/tech/': [
-        {
-          text: '技术',
-          items: [
-            { text: 'Vue', link: '/tech/vue/' },
-            { text: 'Spring Boot', link: '/tech/spring-boot/' }
-          ]
-        }
-      ],
-      '/history/': [
-        {
-          text: '历史',
-          items: [
-            { text: '资治通鉴', link: '/history/zztj/' }
-          ]
-        }
-      ],
-      // ...其他侧边栏配置
-    },
-  //   sidebar: { "/tech/vue": set_sidebar("/tech/vue"),
-  //        '/history/zztj':set_sidebar('/history/zztj')
-  
-  // },
+    
+
     
 
     socialLinks: [
@@ -65,7 +43,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright:'版权所有 © '
+      copyright:'版权所有 © hanli'
     }
   }
 })
